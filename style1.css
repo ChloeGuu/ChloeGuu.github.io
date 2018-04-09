@@ -1,45 +1,113 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    width: 975px;
+    margin: 50px auto;
+}
+
 h1 {
-    font-sie: 20px;
-    color: #aaa7a7;
-    text-align:center;
+    font-size: 40px;
+    color: #8873d3;
+    text-align: right;
 }
 
-h3{
-    background-color: #28cec6;
-    color:white;
-    padding-left:10px;
+h2 {
+    font-size: 25px;
+    background-color: #179e44;
+    transition: background-color 2s;
+    color: white;
+    padding-left: 10px;
 }
 
-p{
+h2:hover {
+    background-color: #19cc6a;
+}
+
+h3 {
+    font-size: 25px;
+    background-color: #0a9790;
+    transition: background-color 2s;
+    color: white;
+    padding-left: 10px;
+}
+
+h3:hover {
+    background-color: #2acca3;
+}
+
+h4 {
+    font-size: 25px;
+    background-color: #813e16;
+    transition: background-color 2s;
+    color: white;
+    padding-left: 10px;
+}
+
+h4:hover {
+    background-color: #b37645;
+}
+
+h5 {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+}
+
+h6 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+p {
     text-indent: 10px;
 }
 
-a{
-    text-decoration: none;
-    color:#e05c28
+hr {
+    height: 2px;
+    background-color: #111a70;
 }
 
-a:link {
-    color: #1644db
+.left {
+    width: 200px;
+    background-color: hsla(208, 41%, 75%, 0.705);
+    float: left;
+    height: 1128px;
+    text-align: center;
 }
 
-a:hover {
-    color: #56cc27
+.right {
+    width: 745px;
+    float: right;
+    margin-left: 15px;
+    margin-right:15px;
+    background-image: url("img/background.gif");
+    height: 1128px;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
-    margin: 0;
-    padding: 0;
+.centerimage {
+    text-align: center;
+    margin: 25px auto;
 }
 
-.container {
-    width: 860px;
-    margin: 0 auto;
-    background-image: url("img/twenty.jpg");
-    padding:50px;
+#keke {
+    display: none;
+    float: left;
 }
 
-.centerimage{
-    text-align:center;
+@media(max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #keke {
+        display:block ;
+        float: left;
+        margin: 10px auto;
+    } 
 }
