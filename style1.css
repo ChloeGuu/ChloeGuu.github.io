@@ -8,48 +8,98 @@ h1 {
     font-size: 40px;
     color: #8873d3;
     text-align: right;
+    width: 95%;
 }
 
 h2 {
     font-size: 25px;
-    background-color: #179e44;
+    background-color: #19cc6a;
     transition: background-color 2s;
     color: white;
     padding-left: 10px;
+    width: 95%;
 }
 
 h2:hover {
-    background-color: #19cc6a;
+    background-color: #179e44;
 }
 
 h3 {
     font-size: 25px;
-    background-color: #0a9790;
+    background-color: #2acca3;
     transition: background-color 2s;
     color: white;
     padding-left: 10px;
+    width: 95%;
 }
 
 h3:hover {
-    background-color: #2acca3;
+    background-color: #0a9790;
 }
 
 h4 {
     font-size: 25px;
-    background-color: #813e16;
+    background-color: #b37645;
     transition: background-color 2s;
     color: white;
     padding-left: 10px;
+    width: 95%;
 }
 
 h4:hover {
-    background-color: #b37645;
+    background-color: #813e16;
+}
+
+@keyframes myfirst1 {
+    from {
+        background: #179e44;
+        width: 130px;
+    }
+    to {
+        background: #19cc6a;
+        width: 95%;
+    }
+}
+
+h2 {
+    animation: myfirst1 5s;
+}
+
+@keyframes myfirst2 {
+    from {
+        background: #0a9790;
+        width: 130px;
+    }
+    to {
+        background:#2acca3;
+        width: 95%;
+    }
+}
+
+h3 {
+    animation: myfirst2 5s;
+}
+
+@keyframes myfirst3 {
+    from {
+        background: #813e16;
+        width: 130px;
+    }
+    to {
+        background: #b37645;
+        width: 95%;
+    }
+}
+
+h4 {
+    animation: myfirst3 5s;
 }
 
 h5 {
     font-size: 15px;
     color: rgb(0, 0, 0);
     text-align: right;
+    width: 95%;
 }
 
 h6 {
@@ -79,7 +129,7 @@ hr {
     width: 745px;
     float: right;
     margin-left: 15px;
-    margin-right:15px;
+    margin-right: 15px;
     background-image: url("img/background.gif");
     height: 1128px;
 }
@@ -87,6 +137,20 @@ hr {
 .centerimage {
     text-align: center;
     margin: 25px auto;
+}
+
+.centerimage {
+    transition: All 0.4s ease-in-out;
+}
+
+.centerimage:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.fixxxx{
+position: fixed;
+padding: 0 auto;
+
 }
 
 #keke {
@@ -106,8 +170,11 @@ hr {
         margin: 0 auto;
     }
     #keke {
-        display:block ;
+        display: block;
         float: left;
         margin: 10px auto;
-    } 
+    }
 }
+
+
+
