@@ -1,0 +1,186 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    width: 975px;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 40px;
+    color: #8873d3;
+    text-align: right;
+    width: 95%;
+}
+
+h2 {
+    font-size: 25px;
+    background-color: #19cc6a;
+    transition: background-color 2s;
+    color: white;
+    padding-left: 10px;
+    width: 95%;
+}
+
+h2:hover {
+    background-color: #179e44;
+}
+
+h3 {
+    font-size: 25px;
+    background-color: #2acca3;
+    transition: background-color 2s;
+    color: white;
+    padding-left: 10px;
+    width: 95%;
+}
+
+h3:hover {
+    background-color: #0a9790;
+}
+
+h4 {
+    font-size: 25px;
+    background-color: #b37645;
+    transition: background-color 2s;
+    color: white;
+    padding-left: 10px;
+    width: 95%;
+}
+
+h4:hover {
+    background-color: #813e16;
+}
+
+@keyframes myfirst1 {
+    from {
+        background: #179e44;
+        width: 130px;
+    }
+    to {
+        background: #19cc6a;
+        width: 95%;
+    }
+}
+
+h2 {
+    animation: myfirst1 5s;
+}
+
+@keyframes myfirst2 {
+    from {
+        background: #0a9790;
+        width: 130px;
+    }
+    to {
+        background:#2acca3;
+        width: 95%;
+    }
+}
+
+h3 {
+    animation: myfirst2 5s;
+}
+
+@keyframes myfirst3 {
+    from {
+        background: #813e16;
+        width: 130px;
+    }
+    to {
+        background: #b37645;
+        width: 95%;
+    }
+}
+
+h4 {
+    animation: myfirst3 5s;
+}
+
+h5 {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    width: 95%;
+}
+
+h6 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+p {
+    text-indent: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: #111a70;
+}
+
+.left {
+    width: 200px;
+    background-color: hsla(208, 41%, 75%, 0.705);
+    float: left;
+    height: 1128px;
+    text-align: center;
+}
+
+.right {
+    width: 745px;
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-image: url("img/background.gif");
+    height: 1128px;
+}
+
+.centerimage {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.centerimage {
+    transition: All 0.4s ease-in-out;
+}
+
+.centerimage:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.fixxxx{
+position: fixed;
+padding: 0 auto;
+
+}
+
+#keke {
+    display: none;
+    float: left;
+}
+
+#11 {
+    font-size: 50px;
+    color: rgb(236, 31, 31);
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #keke {
+        display: block;
+        float: left;
+        margin: 10px auto;
+    }
+}
+
+
+
